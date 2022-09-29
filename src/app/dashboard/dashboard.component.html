@@ -1,0 +1,37 @@
+<body>
+    <header class="header-content header">
+      <div className='logo-content'>
+        <div className='left'>
+          <img class="profile" src="../assets/logo.jpg" alt='abc' />
+          <span class='emp-text'>EMPLOYEE</ span>
+          <span class='emp-text emp-payroll'>PAYROLL</span>
+        </div>
+      </div>
+    </header>
+
+
+    <div class='main-content'>
+        <div class='header-content' >
+          <div class='emp-detail-text'>Employee Details <span class='emp-count'>10</span>
+          </div>
+    </div>
+    
+<table class="table" >
+    <tr>
+      <th>Name</th>
+      <th>GENDER</th>
+      <th>DEPARTMENT</th>
+      <th>SALARY</th>
+      <th>STARTDATE</th>
+      <th>ACTIONS</th>
+       </tr>
+  <tr *ngFor="let Employee of session">
+    <td>{{Employee.fullName}}</td>
+    <td>{{Employee.Gender}}</td>
+    <td>{{Employee.Department}}</td>
+    <td>{{Employee.ChooseYourSalary}}</td>
+    <td>{{Employee.StartDate}}</td>
+    <td>{{Employee.Notes}}</td>
+    
+  </tr>
+  </table>

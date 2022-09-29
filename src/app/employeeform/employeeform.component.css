@@ -99,4 +99,10 @@ label {
   margin-left: 200px;
   width: 50%;
 }
-.table, th, td {border: 2px solid black;}
+.remove{
+    margin-left:20px;
+}
+.dashboard{
+    margin-left:20px;
+}
+
